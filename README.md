@@ -2,7 +2,7 @@
 
 A lightweight, clean, and accessible FAQ section implemented with Web Components and accordion functionality.
 
-![Preview](preview.gif)
+<p><img src="preview.gif" alt="preview"></img></p>
 
 ## Run locally
 
