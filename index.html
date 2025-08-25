@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQ Section Web Component</title>
+    <link rel="shortcut icon" href="#" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="faq-section-container">
+      <faq-section>
+        <faq-item>
+          <span slot="question"
+            >Q: Why choose Web Components for this FAQ?</span
+          >
+          <span slot="answer">
+            <p>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/API/Web_components"
+                target="_blank"
+                rel="noopener"
+                >Web Components</a
+              >
+              provide encapsulation and reusability without requiring a
+              front-end framework.
+            </p>
+            <p>
+              Each faq-item is self-contained, while the parent faq-section
+              manages their state. This keeps the code lightweight, portable,
+              and future-proof, leveraging native browser standards.
+            </p></span
+          >
+        </faq-item>
+        <faq-item>
+          <span slot="question">Q: How does the accordion behavior work?</span>
+          <span slot="answer">
+            <p>
+              The faq-section component manages the “open” state of all its
+              faq-item children. When a user clicks a question, the parent
+              automatically removes the open attribute from all other items.
+              This ensures that only one answer is visible at a time, keeping
+              the FAQ uncluttered and easy to scan.
+            </p>
+            <p>
+              Animating an element’s height in CSS can be tricky to achieve
+              smoothly. To make transitions fluid and performant, each answer
+              uses a grid layout, animating the grid-template-rows property
+              instead of directly changing the element’s height.
+            </p></span
+          >
+        </faq-item>
+        <faq-item>
+          <span slot="question">Q: How is this FAQ accessible?</span>
+          <span slot="answer"
+            ><p>
+              ARIA attributes such as aria-expanded, aria-controls, and role are
+              added to each faq-item to ensure screen readers announce when an
+              item is expanded or collapsed. This makes the FAQ usable and
+              understandable for everyone, including users navigating without
+              visual cues.
+            </p>
+            <p>
+              For keyboard navigation, the
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/inert"
+                target="_blank"
+                rel="noopener"
+                >inert attribute</a
+              >
+              is applied to hidden answers so that any links or buttons inside
+              them are removed from the tab order and cannot receive focus while
+              the answer is collapsed.
+            </p></span
+          >
+        </faq-item>
+      </faq-section>
+    </div>
+    <script type="module" src="faq-item.component.js"></script>
+    <script type="module" src="faq-section.component.js"></script>
+  </body>
+</html>

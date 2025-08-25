@@ -1,0 +1,55 @@
+html {
+  --faq-section-container-padding: 6.25rem 1.25rem;
+  --faq-section-container-background-color: #395bd9;
+
+  --faq-section-max-width: 1380px;
+
+  --faq-section-faq-item-background-color: white;
+  --faq-section-faq-item-border-color: #dadada;
+  --faq-section-faq-item-question-color: #001041;
+  --faq-section-faq-item-question-line-height: 120%;
+  --faq-section-faq-item-answer-color: black;
+  --faq-section-faq-item-answer-line-height: 175%;
+  --faq-section-faq-item-padding: 2.25rem;
+  --faq-section-faq-item-border-radius: 0.375rem;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body,
+button {
+  font-family: 'Poppins', 'Arial', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+a:link,
+a:visited {
+  color: #0000ee;
+}
+
+.faq-section-container {
+  background-color: var(--faq-section-container-background-color);
+  padding: var(--faq-section-container-padding);
+}
+
+[slot='answer'] > :first-child {
+  margin-top: 0;
+}
+
+[slot='answer'] > :last-child {
+  margin-bottom: 0;
+}
+
+faq-section:not(:defined) {
+  display: none;
+}
+
+faq-item:not(:defined) {
+  display: none;
+}
