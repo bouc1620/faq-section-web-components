@@ -1,13 +1,13 @@
 const faqSectionStyles = `
-	:host {
-		min-width: 17.5rem;
-		max-width: var(--faq-section-max-width, 1380px);
-		margin: 0 auto;
-		filter: drop-shadow(rgba(0, 0, 0, 0.25) 0 0.75rem 1.25rem);
-		display: flex;
-		flex-direction: column;
-		gap: 1.25rem;
-	}
+  :host {
+    min-width: 17.5rem;
+    max-width: var(--faq-section-max-width, 1380px);
+    margin: 0 auto;
+    filter: drop-shadow(rgba(0, 0, 0, 0.25) 0 0.75rem 1.25rem);
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
 `;
 
 customElements.define(
@@ -21,9 +21,9 @@ customElements.define(
       super();
       this.attachShadow({ mode: 'open' });
       this.shadowRoot.innerHTML = `
-				<style>${faqSectionStyles}</style>
-				<slot></slot>
-			`;
+        <style>${faqSectionStyles}</style>
+        <slot></slot>
+      `;
     }
 
     connectedCallback() {
