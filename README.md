@@ -2,6 +2,8 @@
 
 A lightweight, clean, and accessible FAQ section implemented with Web Components and accordion functionality.
 
+![Preview](preview.gif)
+
 ## Run locally
 
 ```bash
