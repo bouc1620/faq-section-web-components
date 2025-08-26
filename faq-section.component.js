@@ -1,4 +1,5 @@
-const faqSectionStyles = `
+const styleSheet = new CSSStyleSheet();
+styleSheet.replaceSync(`
   :host {
     min-width: 17.5rem;
     max-width: var(--faq-section-max-width, 1380px);
@@ -8,7 +9,7 @@ const faqSectionStyles = `
     flex-direction: column;
     gap: 1.25rem;
   }
-`;
+`);
 
 customElements.define(
   'faq-section',
@@ -20,8 +21,8 @@ customElements.define(
     constructor() {
       super();
       this.attachShadow({ mode: 'open' });
+      this.shadowRoot.adoptedStyleSheets = [styleSheet];
       this.shadowRoot.innerHTML = `
-        <style>${faqSectionStyles}</style>
         <slot></slot>
       `;
     }

@@ -1,4 +1,5 @@
-const faqItemStyles = `
+const styleSheet = new CSSStyleSheet();
+styleSheet.replaceSync(`
   :host {
     background-color: var(--faq-section-faq-item-background-color, white);
     border: 1px solid var(--faq-section-faq-item-border-color, #dadada);
@@ -96,7 +97,7 @@ const faqItemStyles = `
       transition: none;
     }
   }
-`;
+`);
 
 customElements.define(
   'faq-item',
@@ -127,8 +128,8 @@ customElements.define(
       super();
       this._id = FAQItem.instanceNumber++;
       this.attachShadow({ mode: 'open' });
+      this.shadowRoot.adoptedStyleSheets = [styleSheet];
       this.shadowRoot.innerHTML = `
-        <style>${faqItemStyles}</style>
         <button
           id="faq-question-${this._id}"
           class="faq-question"
