@@ -46,10 +46,7 @@ a:visited {
   margin-bottom: 0;
 }
 
-faq-section:not(:defined) {
-  display: none;
-}
-
+faq-section:not(:defined),
 faq-item:not(:defined) {
   display: none;
 }

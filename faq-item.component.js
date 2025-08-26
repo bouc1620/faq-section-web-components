@@ -150,7 +150,7 @@ customElements.define(
     }
 
     connectedCallback() {
-      this.setAttribute('is-open', 'false');
+      this.isOpen = 'false';
 
       const dispatchToggleEvent = () => {
         this.dispatchEvent(
@@ -195,13 +195,12 @@ customElements.define(
       }
     }
 
-    toggle(value) {
-      value =
-        value ??
+    toggle(force) {
+      this.isOpen =
+        force ??
         (this.isOpen === undefined || this.isOpen === 'false'
           ? 'true'
           : 'false');
-      this.isOpen = value;
     }
   }
 );
