@@ -153,6 +153,7 @@ customElements.define(
       this.isOpen = 'false';
 
       const dispatchToggleEvent = () => {
+        window.getSelection().removeAllRanges();
         this.dispatchEvent(
           new CustomEvent('faq-toggle', {
             bubbles: true,
