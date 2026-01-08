@@ -1,0 +1,16 @@
+{
+  "description": {
+    "fr": "Une section FAQ interactive et accessible, implémentée avec des Web Components.",
+    "en": "A clean and accessible FAQ section implemented with Web Components."
+  },
+  "keywords": [
+    "Web Components",
+    "CSS",
+    "Shadow DOM"
+  ],
+  "languages": [
+    "JavaScript",
+    "HTML"
+  ]
+}
+
