@@ -3,11 +3,18 @@
     "fr": "Une section FAQ simple et accessible, avec animations en accordéon et navigation clavier, construite en Web Components.",
     "en": "A clean FAQ section built with Web Components, featuring accordion animations, keyboard navigation, and accessibility-focused UX."
   },
-  "keywords": [
-    "Web Components",
-    "CSS",
-    "Shadow DOM"
-  ],
+  "keywords": {
+    "fr": [
+      "Web Components",
+      "CSS",
+      "Shadow DOM"
+    ],
+    "en": [
+      "Web Components",
+      "CSS",
+      "Shadow DOM"
+    ]
+  },
   "languages": [
     "JavaScript",
     "HTML"
