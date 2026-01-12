@@ -7,12 +7,14 @@
     "fr": [
       "Web Components",
       "CSS",
-      "Shadow DOM"
+      "Shadow DOM",
+      "A11y"
     ],
     "en": [
       "Web Components",
       "CSS",
-      "Shadow DOM"
+      "Shadow DOM",
+      "A11y"
     ]
   }
 }
