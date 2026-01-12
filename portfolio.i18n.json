@@ -5,14 +5,14 @@
   },
   "keywords": {
     "fr": [
+      "JavaScript",
       "Web Components",
-      "CSS",
       "Shadow DOM",
       "A11y"
     ],
     "en": [
+      "JavaScript",
       "Web Components",
-      "CSS",
       "Shadow DOM",
       "A11y"
     ]
